@@ -172,7 +172,7 @@
     },
 	"Steps: Bash Cloud Shell with no storage": {
         "prefix": [
-            "steps-cloudshell-powershell-nostorage"
+            "steps-cloudshell-bash-nostorage"
         ],
         "body": [
             "1. Open **Cloud Shell** by selecting the icon in the top menu.",
