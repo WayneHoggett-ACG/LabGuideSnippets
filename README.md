@@ -10,8 +10,8 @@ These snippets are designed to assist in making lab guides consistently and quic
 
 To add the snippets for Markdown in VS Code, follow these steps:
 
-1. Open the Command Palette by pressing Cmd + Shift + P (Mac) or Ctrl + Shift + P (Windows/Linux).
-1. Type "Snippets: Configure Snippets" and select the option from the dropdown list.
+1. Open the Command Palette by pressing `Cmd + Shift + P` (Mac) or `Ctrl + Shift + P` (Windows/Linux).
+1. Type: _Snippets: Configure Snippets_ and select the option from the dropdown list.
 1. Select **Markdown** from the list of file types.
 1. In the markdown.json file that opens, add the code from [markdown.json](/markdown.json), inside the existing curly braces.
 
@@ -27,7 +27,7 @@ To add the snippets for Markdown in VS Code, follow these steps:
 
 ### Use a Snippet
 
-1. Press Ctrl + Space and select or start typing the name of the snippet.
+1. Press `Ctrl + Space` and select or start typing the name of the snippet.
 
 ## Available Snippets
 
