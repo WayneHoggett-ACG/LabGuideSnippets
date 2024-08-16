@@ -1,0 +1,199 @@
+{
+    "Template": {
+        "prefix": [
+            "template"
+        ],
+        "body": [
+            "# ${1:lab title}",
+            "",
+            "## Introduction",
+            "",
+            "# ${2:lab introduction}",
+            "",
+            "",
+            "## Solution",
+            "",
+            "Log in to the Azure portal using the credentials provided on the lab page. Be sure to use an incognito or private browser window to ensure you're using the lab account, rather than your own.",
+            "",
+            "# ${3:objective}",
+            "",
+            "${0:first step}",
+            "",
+            "## Conclusion",
+            "",
+            "Congratulations — you've completed this hands-on lab!"
+        ],
+        "description": "Create a template."
+    },
+    "Step: Blank": {
+        "prefix": [
+            "step"
+        ],
+        "body": [
+            "1.${1: instruction}",
+            ""
+        ],
+        "description": "Add a blank step."
+    },
+    "Step: Search ": {
+        "prefix": [
+            "step-search"
+        ],
+        "body": [
+            " 1. In the top search box, search for and select **${1:instruction}**",
+            ""
+        ],
+        "description": "Add a search step."
+    },
+    "Step: Code Block": {
+        "prefix": [
+            "step-codeblock"
+        ],
+        "body": [
+            "1.${1: instruction}",
+            "",
+            "```${2:language}",
+            "${3:code}",
+            "```",
+            ""
+        ],
+        "description": "Add a code block step."
+    },
+    "Step: Next": {
+        "prefix": [
+            "step-click-next"
+        ],
+        "body": [
+            "1. Click **Next**.",
+            ""
+        ],
+        "description": "Add a click next step."
+    },
+	"Step: Update": {
+        "prefix": [
+            "step-click-update"
+        ],
+        "body": [
+            "1. Click **Update**.",
+            ""
+        ],
+        "description": "Add a click update step."
+    },
+	"Step: Add": {
+        "prefix": [
+            "step-click-add"
+        ],
+        "body": [
+            "1. Click **Add**.",
+            ""
+        ],
+        "description": "Add a click add step."
+    },
+    "Step: Review and Create": {
+        "prefix": [
+            "step-click-review-and-create"
+        ],
+        "body": [
+            "1. Click **Review + Create**.",
+            ""
+        ],
+        "description": "Add a click Review + Create step."
+    },
+	"Step: Save and Close": {
+        "prefix": [
+            "step-save-and-close"
+        ],
+        "body": [
+            "1. **Save** and **Close** the file.",
+            ""
+        ],
+        "description": "Add a save and close step."
+    },
+    "Step: Left menu": {
+        "prefix": [
+            "step-left-menu"
+        ],
+        "body": [
+            "1. From the left menu, select **${1:menu}**.",
+            ""
+        ],
+        "description": "Add a step that uses the left menu."
+    },
+    "Step: Left sub menu": {
+        "prefix": [
+            "step-left-sub-menu"
+        ],
+        "body": [
+            "1. From the left menu, under **${1:menu}**, select **${1:submenu}**.",
+            ""
+        ],
+        "description": "Add a step that uses the left menu to select a sub menu."
+    },
+	"Step: Select from the list of resources": {
+        "prefix": [
+            "step-select-resource"
+        ],
+        "body": [
+            "1. Select the **${1:resourcetype}** resource from the list of resources",
+            ""
+        ],
+        "description": "Add a step that selects a resource from the list of resources."
+    },
+    "Objective": {
+        "prefix": [
+            "objective"
+        ],
+        "body": [
+            "",
+            "### ${1:objective}",
+            ""
+        ],
+        "description": "Add a blank objective."
+    },
+    "Note": {
+        "prefix": [
+            "note"
+        ],
+        "body": [
+            "> **Note**: ${1:note}",
+            ""
+        ],
+        "description": "Add a note."
+    },
+    "Tip": {
+        "prefix": [
+            "tip"
+        ],
+        "body": [
+            "> **Tip**: ${1:tip}",
+            ""
+        ],
+        "description": "Add a tip."
+    },
+	"Steps: Bash Cloud Shell with no storage": {
+        "prefix": [
+            "steps-cloudshell-powershell-nostorage"
+        ],
+        "body": [
+            "1. Open **Cloud Shell** by selecting the icon in the top menu.",
+            "1. Select **Bash**.",
+			"1. Select **No storage account required** and select the existing subscription.",
+			"1. Click **Apply**.",
+			""
+        ],
+        "description": "Add steps to open Cloud Shell using Bash without a storage account."
+    },
+	"Steps: PowerShell Cloud Shell with no storage": {
+        "prefix": [
+            "steps-cloudshell-powershell-nostorage"
+        ],
+        "body": [
+            "1. Open **Cloud Shell** by selecting the icon in the top menu.",
+            "1. Select **PowerShell**.",
+			"1. Select **No storage account required** and select the existing subscription.",
+			"1. Click **Apply**.",
+			""
+        ],
+        "description": "Add steps to open Cloud Shell using PowerShell without a storage account."
+    }
+}
