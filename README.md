@@ -33,6 +33,7 @@ To add the snippets for Markdown in VS Code, follow these steps:
 
 * Create a Template: `template: Blank`
 * Create a Step: `step: <optional type of step>`
+* Add multiple Steps for a common task: `steps: <task>`
 * Create an Objective: `objective`
 * Create a Note: `note`
 * Create a Tip: `tip`
