@@ -8,7 +8,7 @@
             "",
             "## Introduction",
             "",
-            "# ${2:lab introduction}",
+            "${2:lab introduction}",
             "",
             "",
             "## Solution",
