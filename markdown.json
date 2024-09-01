@@ -160,6 +160,16 @@
         ],
         "description": "Add a click Review + Create step."
     },
+    "Step: Go to resource": {
+        "prefix": [
+            "step-click-go-to-resource"
+        ],
+        "body": [
+            "1. Click **Go to resource**.",
+            "${0}"
+        ],
+        "description": "Add a click Go to resource step."
+    },
 	"Step: Save and Close": {
         "prefix": [
             "step-save-and-close"
@@ -185,7 +195,7 @@
             "step-left-sub-menu"
         ],
         "body": [
-            "1. From the left menu, under **${1:menu}**, select **${1:submenu}**.",
+            "1. From the left menu, under **${1:menu}**, select **${2:submenu}**.",
             "${0}"
         ],
         "description": "Add a step that uses the left menu to select a sub menu."
