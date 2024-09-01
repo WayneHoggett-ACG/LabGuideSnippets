@@ -8,7 +8,7 @@
             "",
             "## Introduction",
             "",
-            "${2:lab introduction}",
+            "# ${2:lab introduction}",
             "",
             "",
             "## Solution",
@@ -27,21 +27,71 @@
     },
     "Step: Blank": {
         "prefix": [
+            "step-click-and-select"
+        ],
+        "body": [
+            "1. Click **${1:Button}** and select **${2:Menu Item}**.",
+            "${0}"
+        ],
+        "description": "Add a step with a button to click and select a menu item."
+    },
+    "Step: Select For": {
+        "prefix": [
+            "step-select-for"
+        ],
+        "body": [
+            "1. For the **${1:Option}**, select **${2:Menu Item}**.",
+            "${0}"
+        ],
+        "description": "Add a step to select an option."
+    },
+    "Step: Select Link For": {
+        "prefix": [
+            "step-select-link-for"
+        ],
+        "body": [
+            "1. Next to the **${1:Option}** option, click the **${2:Link}**.",
+            "${0}"
+        ],
+        "description": "Add a step to select an option."
+    },
+    "Step: Click and Select": {
+        "prefix": [
             "step"
         ],
         "body": [
-            "1.${1: instruction}",
-            ""
+            "1. ${1:instruction}",
+            "${0}"
         ],
         "description": "Add a blank step."
+    },
+    "Step: Type For ": {
+        "prefix": [
+            "step-type-"
+        ],
+        "body": [
+            "1. For the **${1:Option}** and type _${2:text}_.",
+            "${0}"
+        ],
+        "description": "Add a step to type text and click OK."
+    },
+    "Step: Type and click OK": {
+        "prefix": [
+            "step-type-and-click-ok"
+        ],
+        "body": [
+            "1. Type _${1:text}_ and click **OK**.",
+            "${0}"
+        ],
+        "description": "Add a step to type text and click OK."
     },
     "Step: Search ": {
         "prefix": [
             "step-search"
         ],
         "body": [
-            " 1. In the top search box, search for and select **${1:instruction}**",
-            ""
+            " 1. In the top search box, search for and select **${1:instruction}**.",
+            "${0}"
         ],
         "description": "Add a search step."
     },
@@ -50,12 +100,13 @@
             "step-codeblock"
         ],
         "body": [
-            "1.${1: instruction}",
+            "1. ${1:instruction}.",
             "",
             "```${2:language}",
             "${3:code}",
             "```",
-            ""
+            "",
+            "${0}"
         ],
         "description": "Add a code block step."
     },
@@ -65,7 +116,7 @@
         ],
         "body": [
             "1. Click **Next**.",
-            ""
+            "${0}"
         ],
         "description": "Add a click next step."
     },
@@ -75,7 +126,7 @@
         ],
         "body": [
             "1. Click **Update**.",
-            ""
+            "${0}"
         ],
         "description": "Add a click update step."
     },
@@ -85,7 +136,7 @@
         ],
         "body": [
             "1. Click **Add**.",
-            ""
+            "${0}"
         ],
         "description": "Add a click add step."
     },
@@ -95,7 +146,17 @@
         ],
         "body": [
             "1. Click **Review + Create**.",
-            ""
+            "${0}"
+        ],
+        "description": "Add a click Review + Create step."
+    },
+    "Step: Create": {
+        "prefix": [
+            "step-click-create"
+        ],
+        "body": [
+            "1. Click **Create**.",
+            "${0}"
         ],
         "description": "Add a click Review + Create step."
     },
@@ -105,7 +166,7 @@
         ],
         "body": [
             "1. **Save** and **Close** the file.",
-            ""
+            "${0}"
         ],
         "description": "Add a save and close step."
     },
@@ -115,7 +176,7 @@
         ],
         "body": [
             "1. From the left menu, select **${1:menu}**.",
-            ""
+            "${0}"
         ],
         "description": "Add a step that uses the left menu."
     },
@@ -125,7 +186,7 @@
         ],
         "body": [
             "1. From the left menu, under **${1:menu}**, select **${1:submenu}**.",
-            ""
+            "${0}"
         ],
         "description": "Add a step that uses the left menu to select a sub menu."
     },
@@ -134,8 +195,8 @@
             "step-select-resource"
         ],
         "body": [
-            "1. Select the **${1:resourcetype}** resource from the list of resources",
-            ""
+            "1. Select the **${1:resourcetype}** resource from the list of resources.",
+            "${0}"
         ],
         "description": "Add a step that selects a resource from the list of resources."
     },
@@ -146,7 +207,7 @@
         "body": [
             "",
             "### ${1:objective}",
-            ""
+            "${0}"
         ],
         "description": "Add a blank objective."
     },
@@ -155,8 +216,9 @@
             "note"
         ],
         "body": [
+
             "> **Note**: ${1:note}",
-            ""
+            "${0}"
         ],
         "description": "Add a note."
     },
@@ -166,7 +228,7 @@
         ],
         "body": [
             "> **Tip**: ${1:tip}",
-            ""
+            "${0}"
         ],
         "description": "Add a tip."
     },
@@ -179,7 +241,7 @@
             "1. Select **Bash**.",
 			"1. Select **No storage account required** and select the existing subscription.",
 			"1. Click **Apply**.",
-			""
+			"${0}"
         ],
         "description": "Add steps to open Cloud Shell using Bash without a storage account."
     },
@@ -192,7 +254,7 @@
             "1. Select **PowerShell**.",
 			"1. Select **No storage account required** and select the existing subscription.",
 			"1. Click **Apply**.",
-			""
+			"${0}"
         ],
         "description": "Add steps to open Cloud Shell using PowerShell without a storage account."
     }
