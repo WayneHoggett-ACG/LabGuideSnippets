@@ -272,7 +272,7 @@
             "1. Click **Select**.",
 			"${0}"
         ],
-        "description": "Add steps to open Cloud Shell using Bash without a storage account."
+        "description": "Add steps to open Cloud Shell using Bash with an existing storage account and file share."
     },
 	"Steps: PowerShell Cloud Shell with no storage": {
         "prefix": [
@@ -286,5 +286,16 @@
 			"${0}"
         ],
         "description": "Add steps to open Cloud Shell using PowerShell without a storage account."
+    },
+    "Step: Switch to the classic shell": {
+        "prefix": [
+            "steps-cloudshell-powershell-nostorage"
+        ],
+        "body": [
+            "1. If prompted to **Switch to Classic Cloud Shell**, click **Confirm**.",
+			"${0}"
+        ],
+        "description": "Add steps to switch to the Classic Shell if prompted."
     }
 }
+
