@@ -45,6 +45,16 @@
         ],
         "description": "Add a step to deselect/uncheck an option."
     },
+    "Step: Breadcrumb": {
+        "prefix": [
+            "step-click-breadcrumb"
+        ],
+        "body": [
+            "1. In the breadcrumbs at the top of the page, Click **${1:Link}**",
+            "${0}"
+        ],
+        "description": "Add a step to select a breadcrumbs link."
+    },
     "Step: Select For": {
         "prefix": [
             "step-select-for"
