@@ -15,7 +15,7 @@
             "",
             "Log in to the Azure portal using the credentials provided on the lab page. Be sure to use an incognito or private browser window to ensure you're using the lab account, rather than your own.",
             "",
-            "# ${3:objective}",
+            "### ${3:objective}",
             "",
             "${0:first step}",
             "",
@@ -35,15 +35,35 @@
         ],
         "description": "Add a step with a button to click and select a menu item."
     },
+    "Step: Deselect": {
+        "prefix": [
+            "step-deselect"
+        ],
+        "body": [
+            "1. Uncheck the **${1:Option}** option.",
+            "${0}"
+        ],
+        "description": "Add a step to deselect/uncheck an option."
+    },
     "Step: Select For": {
         "prefix": [
             "step-select-for"
         ],
         "body": [
-            "1. For the **${1:Option}**, select **${2:Menu Item}**.",
+            "1. For the **${1:Option}** option, select **${2:Menu Item}**.",
             "${0}"
         ],
         "description": "Add a step to select an option."
+    },
+    "SubStep: Select For": {
+        "prefix": [
+            "substep-select-for"
+        ],
+        "body": [
+            "   - For the **${1:Option}** option, select **${2:Menu Item}**.",
+            "${0}"
+        ],
+        "description": "Add a substep to select an option within a section."
     },
     "Step: Select Link For": {
         "prefix": [
@@ -54,6 +74,16 @@
             "${0}"
         ],
         "description": "Add a step to select an option."
+    },
+    "SubStep: Select Link For": {
+        "prefix": [
+            "substep-select-link-for"
+        ],
+        "body": [
+            "   - Next to the **${1:Option}** option, click the **${2:Link}**.",
+            "${0}"
+        ],
+        "description": "Add a substep to select an option."
     },
     "Step: Click and Select": {
         "prefix": [
@@ -67,10 +97,10 @@
     },
     "Step: Type For ": {
         "prefix": [
-            "step-type-"
+            "step-type"
         ],
         "body": [
-            "1. For the **${1:Option}** and type _${2:text}_.",
+            "1. For the **${1:Option}** option type _${2:text}_.",
             "${0}"
         ],
         "description": "Add a step to type text and click OK."
@@ -85,15 +115,25 @@
         ],
         "description": "Add a step to type text and click OK."
     },
+    "Step: Top Search ": {
+        "prefix": [
+            "step-top-search"
+        ],
+        "body": [
+            "1. In the top search box, search for and select **${1:instruction}**.",
+            "${0}"
+        ],
+        "description": "Add a search step using the top search box."
+    },
     "Step: Search ": {
         "prefix": [
             "step-search"
         ],
         "body": [
-            " 1. In the top search box, search for and select **${1:instruction}**.",
+            "1. In the search box, search for and select **${1:instruction}**.",
             "${0}"
         ],
-        "description": "Add a search step."
+        "description": "Add a search step using a search box."
     },
     "Step: Code Block": {
         "prefix": [
@@ -140,7 +180,17 @@
         ],
         "description": "Add a click add step."
     },
-    "Step: Review and Create": {
+    "Step: Click Button": {
+        "prefix": [
+            "step-click-button"
+        ],
+        "body": [
+            "1. Click **${1:Button}**.",
+            "${0}"
+        ],
+        "description": "Add a click button step."
+    },
+    "Step: Click Review and Create": {
         "prefix": [
             "step-click-review-and-create"
         ],
@@ -150,7 +200,7 @@
         ],
         "description": "Add a click Review + Create step."
     },
-    "Step: Create": {
+    "Step: Click Create": {
         "prefix": [
             "step-click-create"
         ],
@@ -159,6 +209,26 @@
             "${0}"
         ],
         "description": "Add a click Review + Create step."
+    },
+    "Step: Click Select": {
+        "prefix": [
+            "step-click-select"
+        ],
+        "body": [
+            "1. Click **Select**.",
+            "${0}"
+        ],
+        "description": "Add a click Select step."
+    },
+    "Step: Click Select SubStep": {
+        "prefix": [
+            "substep-click-select"
+        ],
+        "body": [
+            "   - Click **Select**.",
+            "${0}"
+        ],
+        "description": "Add a click Select substep."
     },
     "Step: Go to resource": {
         "prefix": [
@@ -217,6 +287,7 @@
         "body": [
             "",
             "### ${1:objective}",
+            "",
             "${0}"
         ],
         "description": "Add a blank objective."
@@ -226,8 +297,9 @@
             "note"
         ],
         "body": [
-
+            "",
             "> **Note**: ${1:note}",
+            "",
             "${0}"
         ],
         "description": "Add a note."
@@ -237,7 +309,9 @@
             "tip"
         ],
         "body": [
+            "",
             "> **Tip**: ${1:tip}",
+            "",
             "${0}"
         ],
         "description": "Add a tip."
@@ -296,6 +370,15 @@
 			"${0}"
         ],
         "description": "Add steps to switch to the Classic Shell if prompted."
+    },
+    "Step: In the section": {
+        "prefix": [
+            "steps-section"
+        ],
+        "body": [
+            "1. In the **${1:section}** section:",
+			"${0}"
+        ],
+        "description": "Add a section to which you can add substeps."
     }
 }
-
